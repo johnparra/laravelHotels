@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:latest
+    env_file: .env
+    volumes:
+      - ./data/pg_data/:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+  backend:
+    image: node:latest
+    working_dir: /app
+    command: "npm run start"
+    volumes:
+      - ./frontend:/app
+    ports:
+      - 3000:3000
+    depends_on:
+      - db
+  frontend:
+    image: backend
+    build: ./backend
+    working_dir: /var/www/
+    volumes:
+      - ./backend/:/var/www/
+      - ./backend/public/:/var/www/html/
+    ports:
+      - 8200:80
+    depends_on:
+      - db
