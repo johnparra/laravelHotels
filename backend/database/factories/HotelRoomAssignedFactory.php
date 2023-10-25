@@ -17,7 +17,9 @@ class HotelRoomAssignedFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'hotel_id' => \App\Models\Hotel::all()->random()->id,
+            'room_type_id' => \App\Models\RoomType::all()->random()->id,
+            'accommodation_id' => \App\Models\Accommodation::all()->random()->id,
         ];
     }
 }
