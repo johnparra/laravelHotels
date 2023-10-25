@@ -18,7 +18,10 @@ class HotelFactory extends Factory
     {
         return [
             'name' => fake()->word(),
-            'tax_id' => fake()->number(),
+            'tax_id' => fake()->randomNumber(),
+            'address' => fake()->address(),
+            'city' => fake()->city(),
+            'room_number' => fake()->randomNumber(),
         ];
     }
 }
