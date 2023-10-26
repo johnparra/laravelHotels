@@ -7,7 +7,7 @@ services:
       - ./data/pg_data/:/var/lib/postgresql/data
     ports:
       - 5432:5432
-  backend:
+  frontend:
     image: node:latest
     working_dir: /app
     command: "npm run start"
@@ -17,7 +17,7 @@ services:
       - 3000:3000
     depends_on:
       - db
-  frontend:
+  backend:
     image: backend
     build: ./backend
     working_dir: /var/www/
