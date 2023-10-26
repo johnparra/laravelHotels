@@ -8,23 +8,23 @@
 /backend/.env
 /backend/.phpunit.result.cache
 
-/frontend/node_modules
-/frontend/.pnp
-/frontend/.pnp.js
+/frontend_react/node_modules
+/frontend_react/.pnp
+/frontend_react/.pnp.js
 
 # testing
-/frontend/coverage
+/frontend_react/coverage
 
 # production
-/frontend/build
+/frontend_react/build
 
 # misc
-/frontend/.DS_Store
-/frontend/.env.local
-/frontend/.env.development.local
-/frontend/.env.test.local
-/frontend/.env.production.local
+/frontend_react/.DS_Store
+/frontend_react/.env.local
+/frontend_react/.env.development.local
+/frontend_react/.env.test.local
+/frontend_react/.env.production.local
 
-/frontend/npm-debug.log*
-/frontend/yarn-debug.log*
-/frontend/yarn-error.log*
+/frontend_react/npm-debug.log*
+/frontend_react/yarn-debug.log*
+/frontend_react/yarn-error.log*
