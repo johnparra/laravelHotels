@@ -21,7 +21,7 @@ class HotelFactory extends Factory
             'tax_id' => fake()->randomNumber(),
             'address' => fake()->address(),
             'city' => fake()->city(),
-            'room_number' => fake()->randomNumber(),
+            'room_number' => fake()->randomNumber(2, true),
         ];
     }
 }
