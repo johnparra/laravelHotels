@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "87d2f62f-0b07-4ad0-870e-4f19bc462998",
+		"name": "testsJob",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23761007"
+	},
+	"item": [
+		{
+			"name": "hotels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8200/api/hotels/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8200",
+					"path": [
+						"api",
+						"hotels",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "dan carlton",
+							"type": "text"
+						},
+						{
+							"key": "tax_id",
+							"value": "23",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Address",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Cajamarca",
+							"type": "text"
+						},
+						{
+							"key": "room_number",
+							"value": "23",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8200/api/hotels",
+					"host": [
+						"localhost"
+					],
+					"port": "8200",
+					"path": [
+						"api",
+						"hotels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "dan carlton",
+							"type": "text"
+						},
+						{
+							"key": "tax_id",
+							"value": "24",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Address",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Cajamarca",
+							"type": "text"
+						},
+						{
+							"key": "room_number",
+							"value": "25",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8200/api/hotels/10",
+					"host": [
+						"localhost"
+					],
+					"port": "8200",
+					"path": [
+						"api",
+						"hotels",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "dan carlton",
+							"type": "text"
+						},
+						{
+							"key": "tax_id",
+							"value": "24",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Address",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Cajamarca",
+							"type": "text"
+						},
+						{
+							"key": "room_number",
+							"value": "25",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8200/api/hotels/10",
+					"host": [
+						"localhost"
+					],
+					"port": "8200",
+					"path": [
+						"api",
+						"hotels",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
