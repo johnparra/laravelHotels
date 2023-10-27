@@ -1,8 +1,8 @@
-export const HotelItem = ({ city, name, room_number, id }) => {
+export const HotelItem = ({ attributes, id }) => {
 
     return (
       <div className="card">
-          <p>{ id } - { room_number } - { name } - { city } </p>
+          <p>{ id } - { attributes.room_number } - { attributes.name } - { attributes.city } </p>
       </div>
     )
   }

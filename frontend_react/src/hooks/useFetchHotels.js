@@ -7,7 +7,7 @@ export const useFetchHotels = () => {
     const [isLoading, setIsLoading] = useState( true );
 
     const getHotels = async() => {
-        const {data: newHotel} = data;
+        const {data: newHotel} = data.data;
         setHotels(newHotel);
         setIsLoading(false);
     }
