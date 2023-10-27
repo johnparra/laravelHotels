@@ -16,6 +16,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('hotels', [ HotelController::class, 'index']);
 Route::get('hotels/{hotel}', [ HotelController::class, 'show']);
+Route::post('hotels/', [ HotelController::class, 'store']);
+Route::put('hotels/{hotel}', [ HotelController::class, 'update']);
+Route::delete('hotels/{hotel}', [ HotelController::class, 'delete']);
 
 Route::get('roomtypes', [ RoomTypeController::class, 'index']);
 Route::get('roomtypes/{roomtype}', [ RoomTypeController::class, 'show']);
